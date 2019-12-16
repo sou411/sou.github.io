@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<HTML>
+
+<HEAD>
+    <TITLE>chart.jsサンプル</TITLE>
+</HEAD>
+<meta charset="utf-8">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+
+<body>
+  <div class="page1" id="page1">
+    <p class="starttitle" id="starttitle">ボーリング</p>
+    <input type="button" class="startbtn zindex1" id="startbtn" onclick="startbtn()" value="はじめる">
+  </div>
+  <div class="page2" id="page2">
+  <input type="button" class="regisfin" id="regisfin" onclick="okappear();pop1()" value="名前登録完了" >
+  <input type="button" class="addplayer1" id="addplayer1" onclick="addplayer(1)" value="＋">
+  <input type="button" class="addplayer2" id="addplayer2" onclick="addplayer(2)" value="＋">
+  <input type="button" class="addplayer3" id="addplayer3" onclick="addplayer(3)" value="＋">
+  <input type="button" class="addplayer4" id="addplayer4" onclick="addplayer(4)" value="＋">
+  <input type="button" class="addplayer5" id="addplayer5" onclick="addplayer(5)" value="＋">
+  <input type="button" class="addplayer6" id="addplayer6" onclick="addplayer(6)" value="＋">
+  <input type="button" class="addplayer7" id="addplayer7" onclick="addplayer(7)" value="＋">
+  <input type="button" class="addplayer8" id="addplayer8" onclick="addplayer(8)" value="＋">
+  <input type="button" class="addplayer9" id="addplayer9" onclick="addplayer(9)" value="＋">
+  <input type="button" class="addplayer10" id="addplayer10" onclick="addplayer(10)" value="＋">
+  <input type="button" class="addplayer11" id="addplayer11" onclick="addplayer(11)" value="＋">
+  <input type="button" class="addplayer12" id="addplayer12" onclick="addplayer(12)" value="＋">
+
+  <p class="pop1" id="pop1">＋ボタンでプレイヤーを追加し、<br><br>全員の名前を入力して名前登録完了を押してください。</p>
+  <p class="pop2" id="pop2">スコアを入れてＯＫボタンを押してください。</p>
+  
+  
+  <div class="label1 zindex1" id="label1">
+    <p id="name1"><input type="text" id='namea1' class="namea1" placeholder="名前を入力" size="10"><br>
+	  <input type="text" id='scorea1' class="scorea1" placeholder="点数" size="10"></p>
+    <p id="max1">0</p>
+    <p id="min1">0</p>
+    <p id="ave1">0</p>
+  </div>
+  <div class="label2 zindex1" id="label2">
+    <p id="name2"><input type="text" id='nameb1' class="nameb1" placeholder="名前を入力" size="10"><br>
+	  <input type="text" id='scoreb1' class="scoreb1" placeholder="点数" size="10"></p>
+    <p id="max2">0</p>
+    <p id="min2">0</p>
+    <p id="ave2">0</p>
+  </div>
+  <div class="label3 zindex1" id="label3">
+    <p id="name3"><input type="text" id='namec1' class="namec1" placeholder="名前を入力" size="10"><br>
+	  <input type="text" id='scorec1' class="scorec1" placeholder="点数" size="10"></p>
+    <p id="max3">0</p>
+    <p id="min3">0</p>
+    <p id="ave3">0</p>
+  </div>
+  <div class="label4 zindex1" id="label4">
+    <p id="name4"><input type="text" id='named1' class="named1" placeholder="名前を入力" size="10"><br>
+	  <input type="text" id='scored1' class="scored1" placeholder="点数" size="10"></p>
+    <p id="max4">0</p>
+    <p id="min4">0</p>
+    <p id="ave4">0</p>
+  </div>
+  <div class="label5 zindex1" id="label5">
+    <p id="name5"><input type="text" id='namee1' class="namee1" placeholder="名前を入力" size="10"><br>
+	  <input type="text" id='scoree1' class="scoree1" placeholder="点数" size="10"></p>
+    <p id="max5">0</p>
+    <p id="min5">0</p>
+    <p id="ave5">0</p>
+  </div>
+  <div class="label6 zindex1" id="label6">
+    <p id="name6"><input type="text" id='namef1' class="namef1" placeholder="名前を入力" size="10"><br>
+	  <input type="text" id='scoref1' class="scoref1" placeholder="点数" size="10"></p>
+    <p id="max6">0</p>
+    <p id="min6">0</p>
+    <p id="ave6">0</p>
+  </div>
+  <div class="label7 zindex1" id="label7">
+    <p id="name7"><input type="text" id='nameg1' class="nameg1" placeholder="名前を入力" size="10"><br>
+	  <input type="text" id='scoreg1' class="scoreg1" placeholder="点数" size="10"></p>
+    <p id="max7">0</p>
+    <p id="min7">0</p>
+    <p id="ave7">0</p>
+  </div>
+  <div class="label8 zindex1" id="label8">
+    <p id="name8"><input type="text" id='nameh1' class="nameh1" placeholder="名前を入力" size="10"><br>
+	  <input type="text" id='scoreh1' class="scoreh1" placeholder="点数" size="10"></p>
+    <p id="max8">0</p>
+    <p id="min8">0</p>
+    <p id="ave8">0</p>
+  </div>
+  <div class="label9 zindex1" id="label9">
+    <p id="name9"><input type="text" id='namei1' class="namei1" placeholder="名前を入力" size="10"><br>
+	  <input type="text" id='scorei1' class="scorei1" placeholder="点数" size="10"></p>
+    <p id="max9">0</p>
+    <p id="min9">0</p>
+    <p id="ave9">0</p>
+  </div>
+  <div class="label10 zindex1" id="label10">
+    <p id="name10"><input type="text" id='namej1' class="namej1" placeholder="名前を入力" size="10"><br>
+	  <input type="text" id='scorej1' class="scorej1" placeholder="点数" size="10"></p>
+    <p id="max10">0</p>
+    <p id="min10">0</p>
+    <p id="ave10">0</p>
+  </div>
+  <div class="label11 zindex1" id="label11">
+    <p id="name11"><input type="text" id='namek1' class="namek1" placeholder="名前を入力" size="10"><br>
+	  <input type="text" id='scorek1' class="scorek1" placeholder="点数" size="10"></p>
+    <p id="max11">0</p>
+    <p id="min11">0</p>
+    <p id="ave11">0</p>
+  </div>
+  <div class="label12 zindex1" id="label12">
+    <p id="name12"><input type="text" id='namel1' class="namel1" placeholder="名前を入力" size="10"><br>
+	  <input type="text" id='scorel1' class="scorel1" placeholder="点数" size="10"></p>
+    <p id="max12">0</p>
+    <p id="min12">0</p>
+    <p id="ave12">0</p>
+  </div>
+  <div class="label">
+    <p id="max">マックス</p>
+    <p id="min">ミニマム</p>
+    <p id="ave">アベレージ</p>
+  </div>
+  
+	<p class="btn"><input type="button" class="reload" id="reload" value="OK" onclick="register();pop2()"></p>
+ </div>
+  <canvas id="myChart" class="myChart" style="position: absolute; height:1800px; width:3000px; top:10px; left:200px"></canvas>
+ 
+</body>
+
+</HTML>
